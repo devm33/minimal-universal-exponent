@@ -52,7 +52,7 @@
           e.preventDefault();
           str = input.val();
           num = ~~Number(str);
-          if(String(num) === str && num > 0)
+          if(String(num) === str && num > 0) {
             e = min_unv_exp(num);
             output.html('Minimal universal exponent of '+num+' is '+e);
           }
