@@ -48,14 +48,14 @@
         $('#form').on('submit', function(e){
             e.preventDefault();
             str = input.val();
-            num = ~~Number(str);
+            num = Number(str);
             if(String(num) !== str) {
                 output.html('Please input a valid integer.');
             }
             else if(num <= 0) {
                 output.html('Please input a positive integer.');
             }
-            else if(num > 1e20) {
+            else if(~~num <= 0) {
                 output.html('Hmm, that is a bit large.');
             }
             else {
