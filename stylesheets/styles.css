@@ -165,6 +165,11 @@ section {
   padding-bottom:50px;
 }
 
+section#content {
+  font-size: 1.2em;
+  color: #222;
+}
+
 small {
   font-size:11px;
 }
