@@ -47,14 +47,14 @@
       jQuery(function($){
         var output = $('#output');
         var input = $('#input');
-        var str, num, exp;
+        var str, num, e;
         $('#form').on('submit', function(e){
           e.preventDefault();
           str = input.val();
           num = ~~Number(str);
           if(String(num) === str && num > 0)
-            exp = min_unv_exp(num);
-            output.html('Minimal universal exponent of '+num+' is '+exp);
+            e = min_unv_exp(num);
+            output.html('Minimal universal exponent of '+num+' is '+e);
           }
           else {
             output.html('Please input valid positive integer.');
