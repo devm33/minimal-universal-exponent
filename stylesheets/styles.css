@@ -168,6 +168,7 @@ section {
 section#content {
   font-size: 1.2em;
   color: #222;
+  line-height: 2em;
 }
 
 small {
